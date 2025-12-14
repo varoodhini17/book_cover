@@ -145,7 +145,7 @@ urlpatterns = [
 ]
 ```
 # OUTPUT:
-book_cover/book/myapp/static/op.png
+![Book Cover](book/myapp/static/op.png)
 
 
 # RESULT:
