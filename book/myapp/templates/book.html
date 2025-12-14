@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+<head>
+    <title>Preview</title>
+    <link rel="stylesheet" href="{% static 'book.css' %}">
+</head>
+<body>
+
+<div id="cover">
+
+    <h1>The Alchemist</h1>
+    <hr>
+
+    <div id="author">
+        <p class="tagline">
+            This timeless tale was crafted by,<br>
+            <strong>Paulo Coelho</strong>
+        </p>
+
+        <img src="{% static 'auth.jpg' %}" >
+    </div>
+
+    <p id="designer">Book Cover by Varoodhini</p>
+
+</div>
+
+</body>
+</html>

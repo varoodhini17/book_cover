@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-# Date:
+# Date:14-12-2025
 # AIM:
 To design a book front cover page using HTML and CSS.
 
@@ -29,6 +29,121 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:
+```
+book.html
+
+{% load static %}
+<html>
+<head>
+    <title>Preview</title>
+    <link rel="stylesheet" href="{% static 'book.css' %}">
+</head>
+<body>
+
+<div id="cover">
+
+    <h1>The Alchemist</h1>
+    <hr>
+
+    <div id="author">
+        <p class="tagline">
+            This timeless tale was crafted by,<br>
+            <strong>Paulo Coelho</strong>
+        </p>
+
+        <img src="{% static 'auth.jpg' %}" >
+    </div>
+
+    <p id="designer">Book Cover by Varoodhini</p>
+
+</div>
+
+</body>
+</html>
+```
+book.css
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#cover {
+    height: 650px;
+    width: 450px;
+    border: 2px solid brown;
+    background: radial-gradient(circle, #ffeb3b, #ff9800);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: serif;
+}
+
+hr {
+    width: 120px;
+    border: 1px solid brown;
+    margin-bottom: 30px;
+}
+
+/* Author section */
+#author {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.tagline {
+    color: brown;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+/* Author image */
+#author img {
+    height: 90px;
+    width: 90px;
+    border-radius: 5%;
+    border: 2px solid brown;
+    padding: 8px;
+    background-color: white;
+}
+
+/* Designer text at bottom */
+#designer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: monospace;
+}
+```
+views.py
+
+from django.shortcuts import render
+def bc(request):
+    return render(request,'book.html')
+
+
+```
+urls.py
+
+from django.contrib import admin
+from django.urls import path
+from myapp import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.bc),
+]
+```
 # OUTPUT:
+book_cover/op.png
+
+
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
