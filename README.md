@@ -142,7 +142,7 @@ urlpatterns = [
 ]
 ```
 # OUTPUT:
-book_cover/op.png
+book_cover/book/myapp/static/op.png
 
 
 # RESULT:
