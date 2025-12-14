@@ -61,7 +61,8 @@ book.html
 </body>
 </html>
 ```
-book.css
+css
+```
 
 body {
     margin: 0;
@@ -98,7 +99,7 @@ hr {
     text-align: center;
 }
 
-.tagline {
+#tagline {
     color: brown;
     font-family: monospace;
     margin-bottom: 10px;
@@ -123,6 +124,7 @@ hr {
 }
 ```
 views.py
+```
 
 from django.shortcuts import render
 def bc(request):
@@ -131,6 +133,7 @@ def bc(request):
 
 ```
 urls.py
+```
 
 from django.contrib import admin
 from django.urls import path
