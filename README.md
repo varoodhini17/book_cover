@@ -92,7 +92,7 @@ hr {
     margin-bottom: 30px;
 }
 
-/* Author section */
+
 #author {
     margin-top: 40px;
     text-align: center;
@@ -104,7 +104,7 @@ hr {
     margin-bottom: 10px;
 }
 
-/* Author image */
+
 #author img {
     height: 90px;
     width: 90px;
@@ -114,7 +114,7 @@ hr {
     background-color: white;
 }
 
-/* Designer text at bottom */
+
 #designer {
     margin-top: auto;
     margin-bottom: 10px;
